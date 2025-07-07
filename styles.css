@@ -1,0 +1,728 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #f7f7f7;
+    font-family: 'Inter', sans-serif;
+}
+
+.hero {
+    background: url('./images/hero-bg.jpg') center/cover no-repeat;
+    height: 80vh;
+    color: white;
+    display: flex;
+    align-items: center;
+    margin-bottom: 0;
+    padding-bottom: 0;
+    direction: ltr;
+    text-align: left;
+}
+
+.search-bar {
+    display: flex;
+    border-radius: 30px;
+    overflow: hidden;
+    max-width: 500px;
+    width: 100%;
+    animation-delay: 0.8s;
+    animation: fadeSlideUp 1s ease-out forwards;
+    opacity: 0;
+}
+
+.search-bar input {
+    border: none;
+    padding: 12px 20px;
+    flex-grow: 1;
+}
+
+.search-bar button {
+    border: none;
+    background-color: #d00000;
+    color: white;
+    padding: 12px 20px;
+    border-radius: 50px;
+    transition: background-color 0.3s ease;
+}
+
+.search-bar button:hover {
+    background-color: #f4b400;
+    color: #fff;
+    cursor: pointer;
+}
+
+.navbar-nav {
+    margin: 0 auto;
+    direction: ltr;
+}
+
+.navbar {
+    direction: ltr;
+}
+
+.navbar .dropdown-menu {
+    direction: rtl;
+    text-align: right;
+}
+
+.navbar-brand img {
+    height: 40px;
+    width: auto;
+    margin-right: 8px;
+    vertical-align: middle;
+}
+
+.hero h1,
+.hero p {
+    color: #ffffff;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+    animation: fadeSlideUp 1s ease-out forwards;
+    opacity: 0;
+}
+
+.navbar-nav .nav-link {
+    font-size: 1.3rem;
+    margin: 0 12px;
+    transition: all 0.3s ease;
+    position: relative;
+    font-weight: 700;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #d00000;
+    text-decoration: none;
+}
+
+.navbar-nav .nav-link::after {
+    content: '';
+    position: absolute;
+    width: 0%;
+    height: 2px;
+    background-color: #d00000;
+    left: 0;
+    bottom: 0;
+    transition: width 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover::after {
+    width: 100%;
+}
+
+.logo-text {
+    font-size: 1.3rem;
+}
+
+.dropdown-item.active {
+    background-color: #d00000;
+    color: #fff;
+}
+
+.dropdown-menu {
+    width: auto;
+    min-width: unset;
+    padding: 0.25rem 0.25rem;
+}
+
+@keyframes fadeSlideUp {
+    0% {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.hero h1 {
+    animation-delay: 0.2s;
+}
+
+.hero p {
+    animation-delay: 0.5s;
+}
+
+.food-carousel {
+    overflow: hidden;
+    background-color: #fff;
+    padding-top: -10rem;
+    direction: ltr;
+}
+
+.scroll-row {
+    width: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+    position: relative;
+    padding: 10px 20px;
+}
+
+.scroll-track {
+    display: flex;
+    animation: scrollLeft 20s linear infinite;
+}
+
+.scroll-track.reverse {
+    animation: scrollRight 20s linear infinite;
+}
+
+.scroll-content {
+    display: flex;
+    gap: 40px;
+}
+
+.scroll-content img {
+    width: 170px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    margin: 0;
+    padding: 0;
+}
+
+.scroll-track img:hover {
+    transform: scale(1.1);
+}
+
+.scroll-content+.scroll-content {
+    margin-left: 40px;
+    /* or adjust to match your gap */
+}
+
+/* Animations */
+@keyframes scrollLeft {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(-50%);
+    }
+}
+
+@keyframes scrollRight {
+    0% {
+        transform: translateX(-50%);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
+
+.popular-card {
+    width: 70%;
+    height: 500px;
+    background-color: white;
+    border-radius: 20px;
+    padding: 20px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    position: relative;
+    margin: 10px;
+    overflow: hidden;
+}
+
+.popular-card img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 1rem;
+}
+
+.popular-card h5 {
+    font-weight: 600;
+}
+
+.popular-card .price {
+    font-weight: bold;
+    color: #d00000;
+    font-size: 1.1rem;
+    margin: 0.5rem 0 1.2rem 0;
+}
+
+.popular-card .add-cart-btn {
+    position: relative;
+    overflow: hidden;
+    background-color: transparent;
+    color: #d00000;
+    border: 2px solid #d00000;
+    padding: 10px 20px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: color 0.4s ease;
+    z-index: 1;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s ease;
+    margin-top: 0.2rem;
+    border-radius: 999px;
+}
+
+.popular-card:hover .add-cart-btn {
+    opacity: 1;
+    pointer-events: auto;
+
+}
+
+.add-cart-btn::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0%;
+    height: 100%;
+    background-color: #d00000;
+    z-index: 0;
+    transition: width 0.4s ease;
+}
+
+.add-cart-btn:hover::before {
+    width: 100%;
+}
+
+.add-cart-btn span {
+    position: relative;
+    z-index: 1;
+    transition: color 0.4s ease;
+}
+
+.add-cart-btn:hover span {
+    color: white;
+}
+
+.popular-card:hover {
+    transform: scale(1.05);
+    background-color: orange;
+}
+
+.popular-card:hover .add-cart-btn {
+    display: inline-block;
+}
+
+.view-more-btn {
+    position: relative;
+    overflow: hidden;
+    background-color: transparent;
+    color: #d00000;
+    border: 2px solid #d00000;
+    padding: 10px 30px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: color 0.4s ease;
+    z-index: 1;
+    border-radius: 999px;
+    /* pill shape */
+}
+
+.view-more-btn::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0%;
+    height: 100%;
+    background-color: #d00000;
+    z-index: 0;
+    transition: width 0.4s ease;
+}
+
+.view-more-btn:hover::before {
+    width: 100%;
+}
+
+.view-more-btn span {
+    position: relative;
+    z-index: 1;
+    transition: color 0.4s ease;
+}
+
+.view-more-btn:hover span {
+    color: white;
+}
+
+.partner-card {
+    width: 100%;
+    max-width: 450px;
+    height: auto;
+    margin: 0 auto;
+    border-radius: 16px;
+    padding: 15px;
+}
+
+.partner-img {
+    width: 100%;
+    max-width: 100%;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 10px;
+    display: block;
+    margin: 0 auto 15px auto;
+}
+
+@media (max-width: 768px) {
+    .partner-card {
+        padding: 10px;
+    }
+
+    .partner-img {
+        height: 180px;
+    }
+}
+
+
+.partner-btn {
+    position: relative;
+    overflow: hidden;
+    background-color: transparent;
+    color: #d00000;
+    border: 2px solid #d00000;
+    padding: 5px 20px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: color 0.4s ease;
+    z-index: 1;
+    border-radius: 999px;
+    max-width: 300px;
+    margin: 0 auto;
+}
+
+.partner-btn::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0%;
+    height: 100%;
+    background-color: #d00000;
+    z-index: 0;
+    transition: width 0.4s ease;
+}
+
+.partner-btn:hover::before {
+    width: 100%;
+}
+
+.partner-btn span {
+    position: relative;
+    z-index: 1;
+    transition: color 0.4s ease;
+}
+
+.partner-btn:hover span {
+    color: white;
+}
+
+.about-us-section {
+    position: relative;
+    height: 85vh;
+    overflow: hidden;
+}
+
+.about-video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 0;
+}
+
+.about-text-container {
+    position: absolute;
+    bottom: 40px;
+    left: 40px;
+    z-index: 1;
+    max-width: 500px;
+    color: white;
+    text-align: left;
+}
+
+.about-text-container h2 {
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+}
+
+.about-text-container p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+}
+
+.learn-more-btn {
+    position: relative;
+    overflow: hidden;
+    background-color: white;
+    color: #d00000;
+    border: 2px solid #d00000;
+    padding: 10px 24px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: color 0.4s ease;
+    z-index: 1;
+    border-radius: 999px;
+    /* pill-shaped */
+    margin-top: 15px;
+}
+
+.learn-more-btn::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0%;
+    height: 100%;
+    background-color: #d00000;
+    z-index: 0;
+    transition: width 0.4s ease;
+}
+
+.learn-more-btn:hover::before {
+    width: 100%;
+}
+
+.learn-more-btn span {
+    position: relative;
+    z-index: 1;
+    transition: color 0.4s ease;
+}
+
+.learn-more-btn:hover span {
+    color: white;
+}
+
+.footer a:hover {
+    color: #ffc107;
+    text-decoration: none;
+}
+
+.footer ul li {
+    margin-bottom: 0.5rem;
+}
+
+.merchants-section {
+    background-color: #f8f9fa;
+}
+
+.merchant-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.merchant-logo-container {
+    width: 120px;
+    height: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    overflow: hidden;
+    background-color: white;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    margin-bottom: 1rem;
+}
+
+.merchant-logo {
+    margin-top: 0.7rem;
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+}
+
+.merchant-name {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #d00000;
+}
+
+.merchant-description {
+    font-size: 1.1rem;
+    color: #6c757d;
+}
+
+/* Product Card */
+.merchant-product-card {
+    background-color: white;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 270px;
+    min-height: 420px;
+}
+
+.merchant-product-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+.product-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.merchant-product-card:hover .product-image {
+    transform: scale(1.05);
+}
+
+.product-info {
+    padding: 1.5rem;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.product-name {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 0.5rem;
+}
+
+.product-description {
+    font-size: 0.9rem;
+    color: #6c757d;
+    margin-bottom: 1rem;
+    flex-grow: 1;
+}
+
+.product-footer {
+    margin-top: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.price {
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: #d00000;
+}
+
+/* ✅ Add to Cart Button (pill-shaped, hover safe) */
+.add-to-cart-btn {
+    position: relative;
+    overflow: hidden;
+    border: 2px solid #d00000;
+    background-color: transparent;
+    color: #d00000;
+    padding: 8px 18px;
+    font-size: 14px;
+    font-weight: 600;
+    border-radius: 999px;
+    transition: all 0.3s ease;
+    white-space: nowrap;
+    z-index: 1;
+}
+
+.add-to-cart-btn::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0%;
+    height: 100%;
+    background-color: #d00000;
+    z-index: 0;
+    transition: width 0.4s ease;
+}
+
+.add-to-cart-btn:hover::before {
+    width: 100%;
+}
+
+.add-to-cart-btn span {
+    position: relative;
+    z-index: 1;
+    transition: color 0.4s ease;
+}
+
+.add-to-cart-btn:hover span {
+    color: #ffffff;
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+    .merchant-name {
+        font-size: 2rem;
+    }
+
+    .merchant-logo-container {
+        width: 100px;
+        height: 100px;
+    }
+
+    .merchant-logo {
+        width: 60px;
+        height: 60px;
+    }
+
+    .product-info {
+        padding: 1rem;
+    }
+
+    .product-footer {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+
+    .add-to-cart-btn {
+        width: 100%;
+        text-align: center;
+    }
+}
+
+.view-more-merchants-link {
+    color: #d00000;
+    font-weight: 600;
+    font-size: 1.1rem;
+    text-decoration: none;
+    transition: text-decoration 0.2s, color 0.2s;
+    display: inline-block;
+    margin: 0 auto;
+}
+
+.view-more-merchants-link:hover {
+    text-decoration: underline;
+    color: #a00000;
+}
+
+.star-review {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.25rem;
+    font-size: 1.1rem;
+    margin-bottom: 0.2rem;
+}
+
+.star-review .review-score {
+    color: #333;
+    font-size: 1rem;
+    font-weight: 600;
+}
