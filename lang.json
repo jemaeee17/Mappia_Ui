@@ -74,7 +74,10 @@
         "pancitCanton.description": "Egg noodles stir-fried with vegetables and meat",
         "viewMoreMerchants": "View More Merchants",
         "sisigTofu.name": "Sisig Tofu",
-        "sisigTofu.description": "Crispy tofu sisig with onions and chili"
+        "sisigTofu.description": "Crispy tofu sisig with onions and chili",
+        "downloadAppTitle": "Embark on a Flavorful Journey\nwith Mappia",
+        "downloadAppSubtitle": "Download the App Today!",
+        "downloadAppDescription": "Discover delicious food deals, real-time order tracking, and 24/7 customer support—all in one place. New users unlock exclusive welcome offers, making your first bites even better. With a smooth, user-friendly experience, Mappia is designed to help you eat smarter, save more, and live better every day."
     },
     "ar": {
         "navHome": "الرئيسية",
@@ -150,6 +153,9 @@
         "pancitCanton.description": "نودلز مقلية مع صلصة الصويا والخضار",
         "viewMoreMerchants": "عرض المزيد من المتاجر",
         "sisigTofu.name": "توفو سيزيج",
-        "sisigTofu.description": "توفو مقرمش مع بصل وفلفل حار"
+        "sisigTofu.description": "توفو مقرمش مع بصل وفلفل حار",
+        "downloadAppTitle": "انطلق في رحلة مليئة بالنكهات مع مابّيا",
+        "downloadAppSubtitle": "حمّل التطبيق الآن!",
+        "downloadAppDescription": "اكتشف عروض الطعام الشهية، تتبع طلباتك لحظياً، ودعم عملاء على مدار الساعة—all في مكان واحد. المستخدمون الجدد يحصلون على عروض ترحيبية حصرية لجعل أول تجربة ألذ. مع تجربة استخدام سلسة وسهلة، صُمم مابّيا لمساعدتك على تناول الطعام بذكاء، وتوفير المزيد، والعيش بشكل أفضل كل يوم."
     }
 }

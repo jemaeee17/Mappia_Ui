@@ -641,6 +641,40 @@
         </div>
     </section>
 
+    <!-- App Download Section (Redesigned with Placeholders) -->
+    <section id="download-app" class="download-app-section py-5 bg-white" style="min-height: 25vh;">
+      <div class="container">
+        <div class="row align-items-center">
+          <!-- Left: Text, QR, Buttons -->
+          <div class="col-md-6 mb-4 mb-md-0" data-aos="fade-up">
+            <h2 class="fw-bold mb-3" style="font-size:2.5rem; color:#222;" data-i18n="downloadAppTitle"></h2>
+            <h4 class="fw-bold mb-3" style="color:#222;" data-i18n="downloadAppSubtitle"></h4>
+            <p class="mb-4 text-muted" data-i18n="downloadAppDescription"></p>
+            <div class="d-flex align-items-center mb-3">
+              <img src="https://api.qrserver.com/v1/create-qr-code/?size=100x100&data=https://mappia.store" alt="Download QR" style="width:90px;height:90px;" class="me-3 rounded shadow">
+              <div>
+                <a href="#" class="d-block mb-2"><img src="./images/appStore.png" alt="App Store" style="height:40px;"></a>
+                <a href="#" class="d-block mb-2"><img src="./images/playStore.png" alt="Google Play" style="height:40px;"></a>
+              </div>
+            </div>
+          </div>
+          <!-- Right: Phone Images (Placeholders) -->
+          <div class="col-md-6 text-center" data-aos="zoom-in">
+            <div style="position: relative; height: 300px; width: 320px; display: inline-block;">
+              <!-- Left (yellow) phone, rotated and behind -->
+              <div style="position: absolute; left: 0px; top: 10px; z-index: 1; transform: rotate(-18deg);">
+                <img src="./images/app_onboarding.png" alt="Phone Mockup" width="170" height="310" style="border-radius: 10%; box-shadow: 0 4px 16px rgba(0,0,0,0.10);">
+              </div>
+              <!-- Right (app UI), rotated and in front -->
+              <div style="position: absolute; left: 140px; top: -40px; z-index: 2; transform: rotate(15deg);">
+                <img src="./images/app_UI.png" alt="App UI" width="170" height="310" style="border-radius: 10%; border: 2px solid #ccc; box-shadow: 0 4px 16px rgba(0,0,0,0.13);">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <footer class="footer bg-dark text-white pt-5 pb-4" data-aos="fade-up" dir="ltr">
         <div class="container">
             <div class="row text-center text-md-start">
