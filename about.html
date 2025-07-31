@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Mappia Store</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="styles.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg bg-white shadow-sm py-3 px-4 fixed-top">
+        <div class="container-fluid">
+            <!-- Left: Logo and Name -->
+            <a class="navbar-brand d-flex align-items-center" href="index.html">
+                <img src="./images/Mappia_Logo.png" alt="logo" width="30" class="me-2" />
+                <strong class="logo-text">Mappia Store</strong>
+            </a>
+
+            <!-- Toggle for Mobile -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- Center: Navigation -->
+            <div class="collapse navbar-collapse" id="mainNav">
+                <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+                    <li class="nav-item"><a class="nav-link" href="index.html#hero" data-i18n="navHome">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.html#top-picks" data-i18n="navTopPicks">Top Picks</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.html#partners" data-i18n="navPartner">Partner with Us</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="about.html" data-i18n="navAbout">About Us</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.html#merchants" data-i18n="navMerchants">Our Merchants</a></li>
+                    <a class="nav-link" href="#">
+                        <i class="bi bi-cart-fill"></i>
+                        <span data-i18n="navCart">Cart</span>
+                    </a>
+                </ul>
+
+                <!-- Right: Language & Signup -->
+                <div class="d-flex align-items-center gap-3">
+                    <div class="dropdown">
+                        <button class="btn btn-outline-secondary btn-sm dropdown-toggle" type="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            🌐 العربية
+                        </button>
+                        <ul id="langDropdown" class="dropdown-menu dropdown-menu-end">
+                            <li><a class="dropdown-item active" href="#" data-lang="ar">العربية</a></li>
+                            <li><a class="dropdown-item" href="#" data-lang="en">English</a></li>
+                        </ul>
+                    </div>
+                    <a href="#" class="btn btn-danger btn-sm" data-i18n="signup">Sign Up</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- About Us Hero Section -->
+    <section class="about-hero py-5" style="margin-top: 80px; background: linear-gradient(135deg, #d00000 0%, #f4b400 100%); color: white;">
+        <div class="container">
+            <div class="row justify-content-center text-center">
+                <div class="col-lg-8">
+                    <h1 class="display-4 fw-bold mb-4" data-aos="fade-up" data-i18n="aboutPageTitle">What is Mappia?</h1>
+                    <p class="lead" data-aos="fade-up" data-aos-delay="200" data-i18n="aboutPageSubtitle">
+                        Mappia is a mobile delivery and transport platform that is developed in the Philippines and is now launched in Saudi Arabia.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main About Content -->
+    <section class="py-5 bg-light">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-10 mx-auto">
+                    <!-- Introduction -->
+                    <div class="card shadow-sm mb-5" data-aos="fade-up">
+                        <div class="card-body p-5">
+                            <p class="lead mb-4" data-i18n="aboutPageIntro1">
+                                Mappia aims to provide a convenient and efficient way for users to order and receive a wide range of goods, and even transportation services, all through a user friendly app. By partnering with local businesses, Mappia offers a wide range of products and services that users can browse and order through the app.
+                            </p>
+                            <p class="mb-0" data-i18n="aboutPageIntro2">
+                                Mappia is welcoming those who are interested in joining our growing team of drivers or partnering our business, to contact us through our app or website.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Food Delivery Section -->
+                    <div class="card shadow-sm mb-5" data-aos="fade-up" data-aos-delay="100">
+                        <div class="card-header bg-danger text-white">
+                            <h3 class="mb-0"><i class="bi bi-egg-fried me-2"></i><span data-i18n="foodDeliveryTitle">Food Delivery</span></h3>
+                        </div>
+                        <div class="card-body p-5">
+                            <div class="row g-4">
+                                <div class="col-md-6">
+                                    <div class="service-item">
+                                        <h5 class="text-danger mb-3"><i class="bi bi-lightning me-2"></i><span data-i18n="foodDeliveryFastestTitle">Fastest – Mappia Delivers in a Flash</span></h5>
+                                        <p data-i18n="foodDeliveryFastestDesc">Get your favorite food delivered quickly and efficiently with Mappia, the fastest food delivery service in the market.</p>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="service-item">
+                                        <h5 class="text-danger mb-3"><i class="bi bi-phone me-2"></i><span data-i18n="foodDeliveryEasiestTitle">Easiest – Order with Ease</span></h5>
+                                        <p data-i18n="foodDeliveryEasiestDesc">Ordering food has never been simpler! With Mappia, you can browse and order online or download our app for a seamless and rewarding experience.</p>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="service-item">
+                                        <h5 class="text-danger mb-3"><i class="bi bi-grid-3x3-gap me-2"></i><span data-i18n="foodDeliveryVarietyTitle">Food for Every Craving – Explore Our Variety</span></h5>
+                                        <p data-i18n="foodDeliveryVarietyDesc">From local hidden gems to popular restaurant favorites, Mappia's extensive menu has something for everyone. Satisfy your cravings with our diverse selection of dishes.</p>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="service-item">
+                                        <h5 class="text-danger mb-3"><i class="bi bi-credit-card me-2"></i><span data-i18n="foodDeliveryPaymentTitle">Pay with Convenience – MappiaPay</span></h5>
+                                        <p data-i18n="foodDeliveryPaymentDesc">Paying for your meals is a breeze with MappiaPay. Enjoy a hassle-free payment experience that's secure and efficient.</p>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="service-item">
+                                        <h5 class="text-danger mb-3"><i class="bi bi-star me-2"></i><span data-i18n="foodDeliveryRewardsTitle">More Rewarding – Mappia Rewards</span></h5>
+                                        <p data-i18n="foodDeliveryRewardsDesc">Earn points for every order you make with Mappia and redeem them for exciting rewards and discounts. The more you order, the more you're rewarded!</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Package Delivery Section -->
+                    <div class="card shadow-sm mb-5" data-aos="fade-up" data-aos-delay="200">
+                        <div class="card-header bg-warning text-dark">
+                            <h3 class="mb-0"><i class="bi bi-box me-2"></i><span data-i18n="packageDeliveryTitle">Package Delivery</span></h3>
+                        </div>
+                        <div class="card-body p-5">
+                            <div class="row g-4">
+                                <div class="col-md-6">
+                                    <div class="service-item">
+                                        <h5 class="text-warning mb-3"><i class="bi bi-lightning me-2"></i><span data-i18n="packageDeliveryFastestTitle">Fastest – Mappia Delivers in a Flash</span></h5>
+                                        <p data-i18n="packageDeliveryFastestDesc">Get your packages delivered quickly and efficiently with Mappia, the fastest package delivery service in the market.</p>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="service-item">
+                                        <h5 class="text-warning mb-3"><i class="bi bi-truck me-2"></i><span data-i18n="packageDeliveryEasiestTitle">Easiest – Ship with Ease</span></h5>
+                                        <p data-i18n="packageDeliveryEasiestDesc">Shipping packages has never been simpler! With Mappia, you can book and track your packages online or through our app for a seamless and hassle-free experience.</p>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="service-item">
+                                        <h5 class="text-warning mb-3"><i class="bi bi-boxes me-2"></i><span data-i18n="packageDeliveryAnythingTitle">Delivering Anything – From Small to Large</span></h5>
+                                        <p data-i18n="packageDeliveryAnythingDesc">From small parcels to large shipments, Mappia's package delivery service has got you covered. Trust us to deliver your packages safely and on time.</p>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="service-item">
+                                        <h5 class="text-warning mb-3"><i class="bi bi-credit-card me-2"></i><span data-i18n="packageDeliveryPaymentTitle">Pay with Convenience – MappiaPay</span></h5>
+                                        <p data-i18n="packageDeliveryPaymentDesc">Paying for your shipments is a breeze with MappiaPay. Enjoy a hassle-free payment experience that's secure and efficient.</p>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="service-item">
+                                        <h5 class="text-warning mb-3"><i class="bi bi-shield-check me-2"></i><span data-i18n="packageDeliveryReliableTitle">More Reliable – MappiaCare</span></h5>
+                                        <p data-i18n="packageDeliveryReliableDesc">Get peace of mind with MappiaCare, our dedicated customer support team. We're always here to help with any questions or concerns you may have.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Pick and Drop Service Section -->
+                    <div class="card shadow-sm mb-5" data-aos="fade-up" data-aos-delay="300">
+                        <div class="card-header bg-primary text-white">
+                            <h3 class="mb-0"><i class="bi bi-airplane me-2"></i><span data-i18n="airportServiceTitle">Pick and Drop Service (Airport)</span></h3>
+                        </div>
+                        <div class="card-body p-5">
+                            <div class="row g-4">
+                                <div class="col-md-6">
+                                    <div class="service-item">
+                                        <h5 class="text-primary mb-3"><i class="bi bi-geo-alt me-2"></i><span data-i18n="airportServiceTravelTitle">Travel Made Easy – Airport Transfers with Mappia</span></h5>
+                                        <p data-i18n="airportServiceTravelDesc">Get your trip off to a great start with Mappia's airport transfer service. Our reliable drivers will pick you up from the airport and take you safely to your destination, whether it's home or a hotel.</p>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="service-item">
+                                        <h5 class="text-primary mb-3"><i class="bi bi-clock me-2"></i><span data-i18n="airportServiceWaitingTitle">No More Waiting – Book Your Ride with Ease</span></h5>
+                                        <p data-i18n="airportServiceWaitingDesc">Ditch the long taxi lines and book your airport transfer with Mappia. Our app makes it easy to schedule a pickup, so you can focus on your journey.</p>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="service-item">
+                                        <h5 class="text-primary mb-3"><i class="bi bi-check-circle me-2"></i><span data-i18n="airportServiceSeamlessTitle">Seamless Transfers – Stress-Free Travel</span></h5>
+                                        <p data-i18n="airportServiceSeamlessDesc">With Mappia, you can forget about the hassle of airport transfers. Our drivers will ensure a smooth and comfortable ride, so you can arrive at your destination feeling relaxed and refreshed.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer bg-dark text-white pt-5 pb-4" data-aos="fade-up" dir="ltr">
+        <div class="container">
+            <div class="row text-center text-md-start">
+                <!-- Social Media -->
+                <div class="col-md-3 mb-4">
+                    <h5 class="mb-3" data-i18n="footerFollow" dir="rtl">Follow Us</h5>
+                    <div class="d-flex gap-3 justify-content-center justify-content-md-start">
+                        <a href="#" class="text-white fs-5" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+                        <a href="#" class="text-white fs-5" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+                        <a href="#" class="text-white fs-5" aria-label="YouTube"><i class="bi bi-youtube"></i></a>
+                    </div>
+                </div>
+
+                <!-- Navigation Links -->
+                <div class="col-md-3 mb-4">
+                    <h5 class="mb-3" data-i18n="footerLinks" dir="rtl">Quick Links</h5>
+                    <ul class="list-unstyled" dir="rtl">
+                        <li><a href="index.html#hero" class="text-white text-decoration-none"><span data-i18n="footerHome">Home</span></a></li>
+                        <li><a href="index.html#top-picks" class="text-white text-decoration-none"><span data-i18n="footerTopPicks">Top Picks</span></a></li>
+                        <li><a href="index.html#partners" class="text-white text-decoration-none"><span data-i18n="footerPartners">Partner with Us</span></a></li>
+                        <li><a href="about.html" class="text-white text-decoration-none"><span data-i18n="footerAboutUs">About Us</span></a></li>
+                        <li><a href="index.html#merchants" class="text-white text-decoration-none"><span data-i18n="footerMerchants">Our Merchants</span></a></li>
+                    </ul>
+                </div>
+
+                <!-- Address -->
+                <div class="col-md-3 mb-4">
+                    <h5 class="mb-3" data-i18n="footerAddressTitle" dir="rtl">Our Address</h5>
+                    <p class="mb-2" dir="rtl">
+                        <i class="bi bi-geo-alt me-2"></i>
+                        <span data-i18n="footerAddress">Riyadh, Al Faisaliah Tower, 18th + 13th floor, King Fahd Road, Olaya, P.O. Box 12212 No. 7277</span>
+                    </p>
+                </div>
+
+                <!-- Contact Info -->
+                <div class="col-md-3 mb-4">
+                    <h5 class="mb-3" data-i18n="footerContact" dir="rtl">Contact</h5>
+                    <p class="mb-2" dir="rtl">
+                        <i class="bi bi-telephone me-2"></i>
+                        <span data-i18n="footerPhone">0508624264</span>
+                    </p>
+                    <p class="mb-2" dir="rtl">
+                        <i class="bi bi-envelope-open me-2"></i>
+                        <a href="mailto:inquire@mappia.store" class="text-white text-decoration-underline">inquire@mappia.store</a>
+                    </p>
+                    <p class="mb-0" dir="rtl">
+                        <i class="bi bi-building me-2"></i>
+                        <span data-i18n="footerCompany">Anwar Abdullah AL-Assaf Investment Holding Company</span>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 800,
+            once: true
+        });
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
